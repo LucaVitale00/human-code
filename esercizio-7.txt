@@ -6,7 +6,7 @@ Prendo la lista dei documenti
 - accendo la stampante
 
     ? SE la stampante è collegata alla corrente 
-        - è collegata
+        - passo al punto successivo
 
     : ALTRIMENTI
         - la attacco alla corrente
@@ -14,7 +14,7 @@ Prendo la lista dei documenti
 - individuo la stampante sul pc
 
     ? SE ha effettuato il collegamento
-        - è collegata
+        - passo al punto successivo
 
     : ALTRIMENTI
         - la collego 
@@ -52,7 +52,13 @@ Prendo la lista dei documenti
     - inserisco parte retro del foglio
 
 }
-- prendo il foglio successivo
+- verifico che i documenti siano finiti
+   
+    ? SE sono finiti 
+            - passo al punto successivo
+
+        : ALTRIMENTI
+            - prendo il prossimo documento
 - creo una cartella dedicata
 - salvo all'interno della cartella dedicata
 
